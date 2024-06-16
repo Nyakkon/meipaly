@@ -1,0 +1,71 @@
+.carousel {
+    background-image: url(../image-video/home_slider.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__content {
+    text-align: center;
+    color: white;
+}
+
+.carousel__content p {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.carousel__content h1 {
+    font-size: 75px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.carousel__content button {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 15px 25px;
+    color: white;
+    background-color: #e62b4a;
+    border: 1px solid #e62b4a;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+
+.carousel__content button:hover {
+    background-color: #af2239;
+}
+
+
+
+@keyframes arrowDown {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(100px);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: translateY(80px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(100px);
+        opacity: 1;
+    }
+}
+
+.carousel__scroll i {
+    margin-top: 50px;
+    font-size: 30px;
+    animation: arrowDown 2s ease-in infinite 0s;
+}
